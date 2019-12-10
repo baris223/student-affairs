@@ -1,0 +1,606 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#"
+     xml:base="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-12="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#administer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#administer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#faculty_director"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#faculty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#has_level -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#has_level">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#module"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#learning_level"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#modul_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#modul_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#module"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#faculty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#studies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#studies">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#teaches">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lecturer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#faculty_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#faculty_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#faculty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#first_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#first_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#last_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#last_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#level_degree -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#level_degree">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#learning_level"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#modul_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#modul_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#module"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#staff_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#staff_ID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#staff"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#student_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#student_ID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#title">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#course"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#course"/>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#faculty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#faculty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#faculty_director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#faculty_director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#learning_level -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#learning_level"/>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lecturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lecturer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#module -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#module"/>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#postgraduate_course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#postgraduate_course">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#undergraduate_course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#undergraduate_course">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#university -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#university"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#ai_and_bd -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#ai_and_bd">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#postgraduate_course"/>
+        <title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">artificial intelligent and big data</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#ant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#ant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#module"/>
+        <has_level rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lvl-a"/>
+        <modul_of rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#mdc"/>
+        <modul_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anatomy</modul_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#bl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#bl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#module"/>
+        <has_level rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lvl-c"/>
+        <modul_of rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lw"/>
+        <modul_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">business_law</modul_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#com_en -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#com_en">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#undergraduate_course"/>
+        <title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">computer engineering</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#dr_eng -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#dr_eng">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#faculty_director"/>
+        <administer rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#eng"/>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">harun</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yaradanakul</last_name>
+        <staff_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3897</staff_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#dr_lw -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#dr_lw">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#faculty_director"/>
+        <administer rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lw"/>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabbar</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabir</last_name>
+        <staff_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1050</staff_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#dr_mdc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#dr_mdc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#faculty_director"/>
+        <administer rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#mdc"/>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sadettin</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hulagu</last_name>
+        <staff_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">94625</staff_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#elk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#elk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#undergraduate_course"/>
+        <title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electric engineering</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#emb_syts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#emb_syts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#postgraduate_course"/>
+        <title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">embedded system</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#eng -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#eng">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#faculty"/>
+        <faculty_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">faculuty_of_engineering</faculty_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#güc_eltrnk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#güc_eltrnk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#postgraduate_course"/>
+        <title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">power electronics</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lecrurer_law_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lecrurer_law_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lecturer"/>
+        <teaches rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#bl"/>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">berfin</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">femin</last_name>
+        <staff_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6867</staff_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lecturer_engineering_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lecturer_engineering_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lecturer"/>
+        <teaches rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#ml"/>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nurettin</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">abut</last_name>
+        <staff_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1234</staff_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lecturer_engineering_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lecturer_engineering_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lecturer"/>
+        <teaches rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#sd"/>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tarık</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erfidan</last_name>
+        <staff_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6789</staff_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lecturer_law_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lecturer_law_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lecturer"/>
+        <teaches rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#pl"/>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zeki</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gezen</last_name>
+        <staff_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7075</staff_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lecturer_medical_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lecturer_medical_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lecturer"/>
+        <teaches rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#ant"/>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">feriha</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bucak</last_name>
+        <staff_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1111</staff_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lecturer_medical_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lecturer_medical_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lecturer"/>
+        <teaches rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#phy"/>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ali</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kocak</last_name>
+        <staff_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9899</staff_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lvl-a -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lvl-a">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#learning_level"/>
+        <level_degree rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</level_degree>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lvl-b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lvl-b">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#learning_level"/>
+        <level_degree rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</level_degree>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lvl-c -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lvl-c">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#learning_level"/>
+        <level_degree rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</level_degree>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lw -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lw">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#faculty"/>
+        <faculty_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">faculty_of_law</faculty_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#mdc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#mdc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#faculty"/>
+        <faculty_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">faculty_of_medical</faculty_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#ml -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#ml">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#module"/>
+        <has_level rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lvl-c"/>
+        <modul_of rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#eng"/>
+        <modul_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">machine_learning</modul_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#phy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#phy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#module"/>
+        <has_level rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lvl-b"/>
+        <modul_of rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#mdc"/>
+        <modul_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physiology</modul_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#pl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#pl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#module"/>
+        <has_level rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lvl-a"/>
+        <modul_of rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lw"/>
+        <modul_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">penal_law</modul_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#sd -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#sd">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#module"/>
+        <has_level rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#lvl-c"/>
+        <modul_of rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#eng"/>
+        <modul_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">semanic_data_technologies</modul_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#stu_medical_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#stu_medical_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#student"/>
+        <studies rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#ant"/>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mustafa</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">demir</last_name>
+        <student_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5153</student_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#stu_medical_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#stu_medical_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#student"/>
+        <studies rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#phy"/>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">azmi</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atak</last_name>
+        <student_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7826</student_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#student_engineering_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#student_engineering_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#student"/>
+        <studies rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#ml"/>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">baris</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yasli</last_name>
+        <student_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1453</student_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#student_engineering_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#student_engineering_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#student"/>
+        <studies rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#sd"/>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasan</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bayrak</last_name>
+        <student_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1071</student_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#student_law_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#student_law_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#student"/>
+        <studies rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#pl"/>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ahmet</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">keldal</last_name>
+        <student_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4045</student_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#student_law_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#student_law_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/barısyaslı/ontologies/2019/9/untitled-ontology-12#student"/>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cafer</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kara</last_name>
+        <student_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</student_ID>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
